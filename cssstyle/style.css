@@ -30,6 +30,7 @@ h1 {
 input {
 	border-radius: 30px;
 	border: .3px solid hsl(0, 36%, 70%, .5);
+
 }
 
 input::placeholder {
@@ -67,7 +68,7 @@ input::placeholder {
 	border: .5px solid red;
 	background-image: url('../images/icon-error.svg');
 	background-repeat: no-repeat;
-    background-position: center right .5rem;
+    background-position: center right 3rem;
 }
 
 .error {
@@ -198,7 +199,7 @@ input::placeholder {
     }
 
     footer {
-        position:absolute;
+        
    bottom:0;
    width:100%;
    }
@@ -218,6 +219,11 @@ input::placeholder {
 	}
 
 	.btn {
-		margin: 1.3rem 0 .7rem -3rem;
+		margin: 1.4rem 0 1.5rem -3rem;
+	}
+
+	.error {
+		font-size: 100%;
+		padding-top: .5rem;
 	}
 }

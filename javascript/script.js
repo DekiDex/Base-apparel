@@ -1,5 +1,5 @@
 const emailInput = document.querySelector('input[name="email"]');
-const form = document.querySelector('input[name="form"]');
+const form = document.querySelector('form[name="form"]');
 
 const isValidEmail = (email) => {
   const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -21,7 +21,6 @@ const validateInputs = () => {
   isFormValid = true;
   inputFields.forEach((input) => {
     input.classList.remove("invalid");
-    emailInput.placeholder = 'example@email/com';
     input.nextElementSibling.classList.add("hidden");
 
 
