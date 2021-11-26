@@ -1,0 +1,223 @@
+body {
+	font-family: 'Josefin Sans', sans-serif;
+	background-image: linear-gradient(to right, hsl(0, 100%, 98%) , hsl(0, 0%, 100%));
+	margin: 0;
+}
+
+footer {
+	justify-content: center;
+}
+
+.tight {
+	font-weight: 300;
+	color:  hsl(0, 36%, 70%);
+}
+
+h1 {
+	text-transform: uppercase;
+	letter-spacing: .7rem;
+}
+
+.bald {
+	font-weight: 600;
+}
+
+.text {
+	color: hsl(0, 36%, 70%);
+	font-weight: 400;
+}
+
+input {
+	border-radius: 30px;
+	border: .3px solid hsl(0, 36%, 70%, .5);
+}
+
+input::placeholder {
+	color: hsl(0, 36%, 70%, .5);
+	opacity: 0.8;
+}
+
+.btn {
+	border-radius: 30px;
+	border: unset;
+	background-image: linear-gradient(to right, hsl(0, 80%, 86%) , hsl(0, 74%, 74%));
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.btn:hover {
+	box-shadow: 0 10px 15px hsl(0, 74%, 74%);
+	opacity: .5;
+}
+
+.flextwo {
+	display: flex;
+	flex-direction: column;
+}
+
+.arrow {
+	display: block;
+	margin: auto;
+}
+
+.flexthree {
+	display: flex;
+}
+
+.invalid {
+	border: .5px solid red;
+	background-image: url('../images/icon-error.svg');
+	background-repeat: no-repeat;
+    background-position: center right .5rem;
+}
+
+.error {
+	color: hsl(0, 100%, 74%);
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.background {
+	    background-repeat: no-repeat;
+		background-size: cover;
+}
+
+@media screen and (min-width: 280px) {
+
+	.background {
+		background-image: url('../images/hero-mobile.jpg');
+		width: 330px;
+		height: 220px;	
+	}
+
+	footer {
+		font-size: 50%;
+	}
+
+	.main {
+		display: block;
+		margin: auto;
+		width: 330px;
+		height: auto;
+	}
+
+	.flex {
+		display: flex;
+		flex-direction: column-reverse;
+		text-align: center;
+	}
+
+	.logo {
+		width: 90px;
+		height: auto;
+		padding: 3rem 0 1.5rem 2.5rem;
+	}
+
+	h1 {
+		font-size: 290%;
+		padding: 1.5rem 1.8rem 1rem 1.8rem;
+	}
+
+	p {
+		line-height: 145%;
+	}
+
+	.flexthree {
+		justify-content: center;
+		margin-top: .5rem;
+	}
+
+	input {
+		width: 240px;
+		height: 40px;
+	}
+
+	.block {
+		display: block;
+	}
+
+	.arrow {
+		padding: .5rem 1.5rem;
+	}
+
+	.btn {
+		margin: 0 0 .8rem -3rem;
+	}
+} 
+
+@media screen and (min-width: 1000px) {
+
+	.flex {
+		display: flex;
+		flex-direction: row;
+		text-align: unset;
+		justify-content: space-between;
+	}
+
+	.background {
+		background-image: url('../images/hero-desktop.jpg');
+		width: 610px;
+		height: 800px;
+        display: block;
+        margin: 0;
+        background-position: 100% 0;
+        position: absolute;
+        top: 10px;
+        right: 0%;
+	}
+
+	.main {
+		display: unset;
+		margin: unset;
+		width: unset;
+		height: unset;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.block {
+		width: 500px;
+		margin: auto 0 auto 0;
+		padding: 3rem 0 0 6rem;
+	}
+
+	.logo {
+		width: 220px;
+		padding-left: 6rem;
+	}
+
+    h1 {
+    	padding: unset;
+    	font-size: 530%;
+    	letter-spacing: 1.3rem;
+    }
+
+    p {
+    	font-size: 130%;
+    }
+
+    footer {
+        position:absolute;
+   bottom:0;
+   width:100%;
+   }
+
+    input {
+    	width: 430px;
+    	height: 55px;
+    	font-size: 130%;
+    }
+
+    .flextwo {
+    	padding-top: 1.5rem;
+    }
+
+    .arrow {
+		padding: .5rem 2.5rem;
+	}
+
+	.btn {
+		margin: 1.3rem 0 .7rem -3rem;
+	}
+}
